@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+
+<!--<view class="title">小猪电子</view>-->
+<image src="../../images/logo2.png" mode="widthFix" />  
+<view class="button" bindtap="send_data_to_server">向服务器发送数据</view>
+
+
+<view><text>内容为：{{result}}</text></view>
+<button type="primary" bindtap="scanCode">扫码</button>
+
+
+<!--<view class="itemView">服务器ip：-->
+  <view class="itemView">
+    <input class="input" name="userName" placeholder="请输入密码"
+    bindinput="userNameInput"/>
+  </view>
+
+</view>
