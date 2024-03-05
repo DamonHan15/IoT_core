@@ -1,9 +1,8 @@
-<!--index.wxml-->
 <view class="container">
 
 <!--<view class="title">小猪电子</view>-->
 <image src="../../images/logo2.png" mode="widthFix" />  
-<view class="button" bindtap="send_data_to_server">向服务器发送数据</view>
+
 
 
 <view><text>内容为：{{result}}</text></view>
@@ -12,8 +11,18 @@
 
 <!--<view class="itemView">服务器ip：-->
   <view class="itemView">
-    <input class="input" name="userName" placeholder="请输入密码"
+    <input class="input" name="userName" placeholder="请在此输入要发送的数据"
     bindinput="userNameInput"/>
   </view>
-
+  <button type="primary" bindtap="send_data_to_server">开始</button>
 </view>
+
+<view><text>显示服务器返回：{{server_info}}</text></view>
+
+<button type="primary" bindtap="user_agree">用户同意</button>
+<button type="primary" bindtap="getAccessToken">获取AccessToken</button>
+<button type="primary" bindtap="Login">登录</button>
+<button type="primary" bindtap="message">给用户发送消息</button>
+<view><text>显示accessToken：{{accessToken}}</text></view>
+<view><text>显示openid：{{showopenid}}</text></view>
+<view><text>显示session_key：{{showsession_key}}</text></view>
